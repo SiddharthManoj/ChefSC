@@ -14,11 +14,6 @@ header{
 	margin-top: 20px;
 }
 
-  .row {
-    margin-bottom: 25px;
-    text-align: center;
-  }
-
   .head, .head:hover {
     box-shadow: none;
     margin-top: 30px;
@@ -47,16 +42,16 @@ header{
 
   }
 
-.dining_hall_image img {
+.dining_hall_row {
 
 	-webkit-transform: scale(1);
 	-webkit-transition-timing-function: ease-in;
 	-webkit-transition-duration: 200ms;
 }
 
-.dining_hall_image img:hover {
+.dining_hall_row:hover{
 
-	-webkit-transform: scale(1.1);
+	-webkit-transform: scale(1.05);
 	-webkit-transition-timing-function: ease-in;
 	-webkit-transition-duration: 200ms;
 }
@@ -67,3 +62,59 @@ header{
 	font-size: 4em;
 }
 
+.dining_hall_title {
+
+  text-align: left;
+  font-size: 5em;
+
+}
+
+  .row{
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .row.dining_hall_row{
+    border-top: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+
+  }
+
+  .row #easter_egg{
+    border: none;
+  }
+
+.dining_hall_row{
+    @include respond(portrait-phones){
+
+      h1, h2{
+        font-size: 48px;
+        word-wrap: none;
+      }
+  }
+    @include respond(all-phones){
+      h1, h2{
+        font-size: 48px;
+        word-wrap:none;
+      }
+      .tab-nav > li > a{
+        
+        width: auto;
+
+      }
+    }
+}
+
+.veggie{
+  color: #008000;
+}
+.vegan{
+  color: #ffcc00;
+}
+
+.hours{
+  text-decoration: underline;
+}
+.slogan{
+  color:#ffcc00;
+}

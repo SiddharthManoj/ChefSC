@@ -18,7 +18,8 @@ $max-device-width:  2880px;
 $nav-distance:  0;
 
 // Typography
-$font-family: "Open Sans";
+$helvetica_neue: HNLT-ThEx;
+$font-family: $helvetica_neue;
 $font-style-italic:  italic;
 $icons:  entypo;
 $font-smoothing:  antialiased;

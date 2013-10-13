@@ -37,24 +37,75 @@
 		 However, there is a blank style.css in the css directory should you prefer -->
 	<link rel="stylesheet" href="css/gumby.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+	<script type="text/javascript" src="js/parse.js"></script>
 </head>
 
 <body>
 
 	<header class="header">
+			<div class="row">
+				<div class="twelve columns">
+					<!-- <img src="img/header.png" id="logo" class="image centered three columns"/></a> -->
+					<a href="index.html"><h1 class="special">chefSC</h1></a>
+				</div>
+			</div>
+	</header>
+
+	<!-- <header class="header">
 		<div class="row">
 			<div class="centered twelve columns">
 				<a href="index.html"><img src="img/header.png" class="image centered three columns"/></a>
 			</div>
 		</div>
-	</header>
+	</header> -->
 
 	<div class="wrapper">
 		<div class="row">
 			<div class="twelve columns">
 					<h1>Parkside</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper" id="food_list_parkside">
+		<div class="row">
+			<div class="twelve columns centered">
+				<section class="tabs">
+					<ul class="tab-nav">
+				        <li><a href="#">Breakfast</a></li>
+				        <li class="active"><a href="#"><span>Lunch</a></li>
+				        <li><a href="#">Dinner</a></li>
+			    	</ul>
+
+			    	<div class="tab-content">
+			    		<h4 class="hours">Hours</h4>
+			    		<h5>Monday-Friday: 7a.m. - 10:30a.m.</h5>
+			    		<h5>Saturday and Sunday: 10a.m. - 10:00p.m.</h5>
+			        	<div class = "twelve columns centered" id="food_list_parkside_breakfast"></div>
+			    	</div>
+			    	<div class="tab-content active">
+			    		<h4 class="hours">Hours</h4>
+			    		<h5>Monday-Friday: 11a.m. - 4p.m.</h5>
+			    		<h5>Saturday and Sunday: 10a.m. - 10:00p.m.</h5>
+			        	<div class = "twelve columns centered" id="food_list_parkside_lunch"></div>
+			    	</div>
+			    	<div class="tab-content">
+			    		<h4 class="hours">Hours</h4>
+			    		<h5>Monday-Friday: 4p.m. - 10:00p.m.</h5>
+			    		<h5>Saturday and Sunday: 10a.m. - 10:00p.m.</h5>
+			       		<div class = "twelve columns centered" id="food_list_parkside_dinner"></div>
+			    	</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="row">
+			<div class = "twelve columns centered" id="food_list_parkside">
 			</div>
 		</div>
 	</div>

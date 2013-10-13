@@ -26,3 +26,12 @@
 //       url('../fonts/icons/#{$some-font-variable}.woff') format('woff'),
 //       url('../fonts/icons/#{$some-font-variable}.ttf')  format('truetype');
 //}
+@font-face {
+  font-family: '#{$helvetica_neue}';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/helvetica_neue/#{$helvetica_neue}.eot);
+  src: url('../fonts/helvetica_neue/#{$helvetica_neue}.eot?#iefix') format('ie9-skip-eot'),
+       url('../fonts/helvetica_neue/#{$helvetica_neue}.woff') format('woff'),
+       url('../fonts/helvetica_neue/#{$helvetica_neue}.ttf')  format('truetype');
+}

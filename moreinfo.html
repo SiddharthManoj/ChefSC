@@ -5,103 +5,114 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
+<!--[if gt IE 9]><!--> 
 
-	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
-			 More info: h5bp.com/b/378 -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
 
-	<title>chefSC</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="humans.txt">
+		<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+				 More info: h5bp.com/b/378 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<link rel="shortcut icon" href="" type="image/x-icon" />
+		<title>chefSC</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="humans.txt">
 
-	<!-- Facebook Metadata /-->
-	<meta property="fb:page_id" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:description" content=""/>
-	<meta property="og:title" content=""/>
+		<link rel="shortcut icon" href="" type="image/x-icon" />
 
-	<!-- Google+ Metadata /-->
-	<meta itemprop="name" content="">
-	<meta itemprop="description" content="">
-	<meta itemprop="image" content="">
+		<!-- Facebook Metadata /-->
+		<meta property="fb:page_id" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content=""/>
+		<meta property="og:title" content=""/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<!-- Google+ Metadata /-->
+		<meta itemprop="name" content="">
+		<meta itemprop="description" content="">
+		<meta itemprop="image" content="">
 
-	<!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
-		 However, there is a blank style.css in the css directory should you prefer -->
-	<link rel="stylesheet" href="css/gumby.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
-	<script src="js/libs/modernizr-2.6.2.min.js"></script>		
-	<script type="text/javascript" src="js/parse.js"></script>
-</head>
+		<!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+			 However, there is a blank style.css in the css directory should you prefer -->
+		<link rel="stylesheet" href="css/gumby.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
 
-<body>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>-->
+		<script src="js/libs/modernizr-2.6.2.min.js"></script>
+		<script type="text/javascript" src="js/parse.js"></script>
+		<script type="text/javascript" src="js/jquery.fittext.js"></script>
+		<script type="text/javascript">
+			$(".row").fitText(1.1, { minFontSize: '20px', maxFontSize: '75px' });
+		</script>
+		
+	</head>
 
-	<header class="header">
+	<body>
+
+		<header class="header">
 			<div class="row">
 				<div class="twelve columns">
 					<!-- <img src="img/header.png" id="logo" class="image centered three columns"/></a> -->
-					<a href="index.html"><h1 class="special">chefSC</h1></a>
+					<a href="index.html"><h1 class="special fittext">chefSC</h1></a>
 				</div>
 			</div>
-	</header>
-	<!-- <header class="header">
-		<div class="row">
-			<div class="centered twelve columns">
-				<a href="index.html"><img src="img/header.png" class="image centered three columns"/></a>
-			</div>
-		</div>
-	</header> -->
+		</header>
 
-	<div class="wrapper">
 		<div class="row">
 			<div class="twelve columns">
-					<h1>EVK</h1>
+					<div class="centered eight columns">
+						<h1 class="fittext">More Info</h1>
+					</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="wrapper" id="food_list_evk">
 		<div class="row">
-			<div class="twelve columns centered">
-				<section class="tabs">
-					<ul class="tab-nav">
-				        <li><a href="#">Breakfast</a></li>
-				        <li class="active"> <a href="#">Lunch</a></li>
-				        <li><a href="#">Dinner</a></li>
-			    	</ul>
-
-			    	<div class="tab-content">
-			    		<h4 class="hours">Hours</h4>
-			    		<h5>Monday-Friday: 7a.m. - 10:30a.m.</h5>
-			    		<h5>Saturday and Sunday: 10a.m. - 10:00p.m.</h5>
-			        	<div class = "twelve columns centered" id="food_list_evk_breakfast"></div>
-			    	</div>
-			    	<div class="tab-content active">
-			    		<h4 class="hours">Hours</h4>
-			    		<h5>Monday-Friday: 11a.m. - 4p.m.</h5>
-			    		<h5>Saturday and Sunday: 10a.m. - 10:00p.m.</h5>
-			        	<div class = "twelve columns centered" id="food_list_evk_lunch"></div>
-			    	</div>
-			    	<div class="tab-content">
-			    		<h4 class="hours">Hours</h4>
-			    		<h5>Monday-Friday: 4p.m. - 10:00p.m.</h5>
-			    		<h5>Saturday and Sunday: 10a.m. - 10:00p.m.</h5>
-			       		<div class = "twelve columns centered" id="food_list_evk_dinner"></div>
-			    	</div>
-				</section>
+			<div class="twelve columns">
+					<div class="centered eight columns">
+						<h2 class="fittext veggie">Green items are vegetarian friendly</h2>
+					</div>
 			</div>
 		</div>
-	</div>
+
+		<div class="row">
+			<div class="twelve columns">
+					<div class="centered eight columns">
+						<h2 class="fittext vegan">Yellow items are vegan friendly</h2>
+					</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+					<div class="centered eight columns">
+						<h2>Developed By:</h2>
+						<h3>John Pugliesi</h3>
+						<h3>Siddharth Manoj</h3>
+						<h3>Jordan Banafshea</h3>
+					</div>
+			</div>
+		</div>
+
+
+		<!-- <div class="row dining_hall_image">
+			<div class="twelve columns">
+				<a href="evk.html"><img src="img/EVK.png" class="image twelve columns"></img></a>
+			</div>
+		</div>
+		<div class="row dining_hall_image">
+			<div class="twelve columns">
+				<a href="cafe84.html"><img src="img/Cafe84.png" class="image twelve columns"></img></a>
+			</div>
+		</div>
+		<div class="row dining_hall_image">
+			<div class="twelve columns">
+				<a href="parkside.html"><img src="img/Parkside.png" class="image twelve columns"></img></a>
+			</div>
+		</div> -->
 
 
 		<!-- Grab Google CDN's jQuery, fall back to local if offline -->
@@ -160,6 +171,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 		<![endif]-->
+		
 		
 	</body>
 </html>

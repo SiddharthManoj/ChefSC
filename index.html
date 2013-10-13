@@ -20,7 +20,8 @@
 		<meta name="keywords" content="" />
 		<meta name="author" content="humans.txt">
 
-		<link rel="shortcut icon" href="" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/iconcheffsc.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/iconcheffsc.png"/>
 
 		<!-- Facebook Metadata /-->
 		<meta property="fb:page_id" content="" />
@@ -44,6 +45,10 @@
 		<!--<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>-->
 		<script src="js/libs/modernizr-2.6.2.min.js"></script>
 		<script type="text/javascript" src="js/parse.js"></script>
+		<script type="text/javascript" src="js/jquery.fittext.js"></script>
+		<script type="text/javascript">
+			$(".row").fitText(1.1, { minFontSize: '20px', maxFontSize: '75px' });
+		</script>
 		
 	</head>
 
@@ -51,14 +56,67 @@
 
 		<header class="header">
 			<div class="row">
-				<div class="twelve columns">
-					<img src="img/header.png" id="logo" class="image centered three columns"/></a>
-					<!-- <h1 class="special">chefSC</h1> -->
+				<div class="four columns centered">
+					<!-- <img src="img/header.png" id="logo" class="image centered three columns"/></a> -->
+					<h1 class="special fittext">chefSC</h1>
+					<h5 class="slogan">We Serve You.</h5>
 				</div>
+
 			</div>
 		</header>
 
-		<div class="row dining_hall_image">
+		<div class="row dining_hall_row">
+			<div class="twelve columns">
+					<div class="eight columns">
+						<a href="evk.html"><h1 class="dining_hall_title fittext">EVK</h1></a>
+					</div>
+			</div>
+		</div>
+
+		<div class="row dining_hall_row">
+			<div class="twelve columns">
+					<div class="eight columns">
+						<a href="cafe84.html"><h1 class="dining_hall_title fittext">Caf&eacute 84</h1></a>
+					</div>
+			</div>
+		</div>
+
+		<div class="row dining_hall_row">
+			<div class="twelve columns">
+					<div class="eight columns">
+						<a href="parkside.html"><h1 class="dining_hall_title fittext">Parkside</h1></a>
+					</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+					<div class="centered eight columns">
+						<a href="moreinfo.html"><i class="icon-info"></i></a>
+					</div>
+					
+			</div>
+		</div>
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<div class="row" id="easter_egg">
+			<!-- <div class="twelve columns"> -->
+					<div class="centered eight columns valign row">
+						<img src="img/easter_egg.png"/>
+					</div>
+					
+					
+			<!-- </div> -->
+		</div>
+
+		
+
+		<!-- <div class="row dining_hall_image">
 			<div class="twelve columns">
 				<a href="evk.html"><img src="img/EVK.png" class="image twelve columns"></img></a>
 			</div>
@@ -72,7 +130,7 @@
 			<div class="twelve columns">
 				<a href="parkside.html"><img src="img/Parkside.png" class="image twelve columns"></img></a>
 			</div>
-		</div>
+		</div> -->
 
 
 		<!-- Grab Google CDN's jQuery, fall back to local if offline -->
@@ -131,6 +189,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 		<![endif]-->
+		
 		
 	</body>
 </html>
